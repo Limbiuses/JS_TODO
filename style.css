@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #5e085f);
+    padding: 10px;
+}
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background: linear-gradient(90deg, #0a2355, #b910b9);
+    margin: 30px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.todo-app h2 {
+    color: rgb(252, 101, 0);
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    justify-content: center;
+}
+.todo-app h2 img {
+    width: 64px;
+    margin-left: 20px;
+}
+.row {
+    display: flex;
+    background: linear-gradient(50deg, #043448, #770b77);
+    border-radius: 30px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+input {
+    text-decoration: double;
+    flex: 1;
+    border: none;
+    color: rgb(252, 101, 0);
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+    font-size: 22px;
+}
+.but {
+    display: flex;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 40px;
+    background: linear-gradient(  50deg, #032431,#b910b9); 
+    color: rgb(252, 101, 0);
+}
+.btn {
+    display: flex;
+    background: linear-gradient(50deg, #043448, #770b77);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    
+}
+button {
+    width: 23%;
+    margin: 5px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    background: linear-gradient(50deg, #032431, #b910b9);
+    color: rgb(252, 101, 0);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    
+}
+ul li {
+    list-style: none;
+    font-size: 22px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    color: rgb(130, 130, 130);
+}
+li {
+    width: 100%;
+    max-width: 540px;
+    margin: 30px auto 20px;
+    margin-top: 5px;
+    border-radius: 40px;
+    background: linear-gradient(  10deg, #043448, #c133c1); 
+    color: #686767;
+}
+ul li::before {
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(Images/icon.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.check {
+    color: #ec0e33;
+    background: #cac146;
+    text-decoration: line-through;
+}
+ul li.check::before {
+    background-image: url(Images/icon2.png);
+}
+ul li span {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    color: #26203d;
+
+    line-height: 40px;
+    text-align: center;
+}
+ul li span:hover {
+    background: linear-gradient(90deg, #c464eb, #88d471);
+    border-radius: 50%;
+}
+
+/*
+li:nth-child(odd) {
+    margin: 10px;
+    border-radius: 40px;
+    background: linear-gradient(50deg, #04709b, #b910b9);  четный Элемент 
+     color: #fff; 
+}
+/* li:nth-child(even) {
+    margin: 0px 10px 0px;
+    border-radius: 40px;
+    background: linear-gradient(50deg,#b910b9, #04709b);  нечетный Элемент
+    color: #fff;  
+} */
+

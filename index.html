@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TO DO LIST</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="todo-app">
+                <h2>TO DO LIST<img src="images/icon1.png" /></h2>
+                <div class="row">
+                    <input type="text" id="input-box" placeholder="Введите текст"/>
+                    <button class="but" onclick="addTask()">Добавить запись</button>
+                </div>
+                <div class="btn">
+                    <button onclick="clearList()">Удалить cписок</button>
+                    <button onclick="clearLastEl()">Удалить последний элемент</button>
+                    <button onclick="clearFirstEl()">Удалить первый элемент</button>
+                    <button onclick="SelectOdd()">Выделить четный</button>
+                    <button onclick="SelectEven()">Выделить нечетный</button>
+                </div>
+            </div>
+            <div class ="cen">            
+                <ul id="list-container">
+                </ul>
+            </div>
+
+        </div>
+        <script src="ToDo.js"></script>
+    </body>
+</html>
